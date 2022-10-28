@@ -149,15 +149,17 @@ button {
 
 #histories {
   display: flex;
-  flex-wrap: wrap;
+  min-height: max-content;
+  gap: 15px;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 
 .card {
   width: 100%;
-  height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -169,6 +171,15 @@ button {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+}
+
+.card h3 {
+  text-align: center;
+  /* font-size: 15px; */
+}
+
+.card p {
+  margin: 5px 0px;
 }
 
 #modal-background {
@@ -195,7 +206,14 @@ button {
     width: 100%;
   }
 
-  .card {
+  #histories {
     flex-direction: column;
   }
+
+  .card {
+
+    flex-direction: column;
+  }
+
+  .card h3 {}
 }
