@@ -119,6 +119,7 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      console.log(startTime)
     }
     count--;
   }, 1000);
@@ -136,5 +137,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? Math.round(timeSpent) : 0} seconds`;
 }, 1000);
