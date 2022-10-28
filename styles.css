@@ -15,9 +15,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 0px auto;
+  padding: 0px;
 }
 
 #blog a {
+  padding: 10px;
   width: 100%;
   text-decoration: none;
   color: white;
