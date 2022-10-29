@@ -162,7 +162,8 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   min-height: max-content;
   gap: 15px;
   flex-wrap: nowrap;
@@ -221,7 +222,8 @@ button {
   }
 
   #histories {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    /* flex-direction: column; */
   }
 
   .card {
