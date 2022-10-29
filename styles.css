@@ -44,6 +44,7 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 10px 10px;
 }
 
 #display {
@@ -165,8 +166,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: max-content;
-  gap: 15px;
-  flex-wrap: nowrap;
+  gap: 20px;
   justify-content: space-around;
 }
 
@@ -185,12 +185,10 @@ button {
       rgba(255, 255, 255, 0.1) 0.18%,
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
 }
 
 .card h3 {
   text-align: center;
-  /* font-size: 15px; */
 }
 
 .card p {
@@ -216,6 +214,10 @@ button {
 }
 
 @media only screen and (max-width: 700px) {
+  #question {
+    font-size: 18px;
+  }
+
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -223,7 +225,6 @@ button {
 
   #histories {
     grid-template-columns: repeat(1, 1fr);
-    /* flex-direction: column; */
   }
 
   .card {
